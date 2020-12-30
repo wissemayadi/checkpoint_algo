@@ -1,0 +1,27 @@
+ALGORITHM chaine
+VAR
+    c : STRING 
+    l,w,v :INTEGER
+BEGIN
+    l:=0;
+    w:=0;
+    v:=0;
+WHILE (c<>".")
+read(c);
+l:=l+1;
+IF(c==="")
+w:=w+1
+
+
+IF(c='a'|| c='o'||c='u'||c='y'||c='i'||c='e'){
+    v:=v+1;
+}
+
+END WHILE
+write(l);
+write(w);
+write(v);
+
+
+
+END
