@@ -1,4 +1,4 @@
-ALGORITHM lineardata
+ALGORITHM problem2
 VAR i,j,sum INTEGER
 arr :Array_of INTEGER[];
 arr1 :Array_of INTEGER[];
@@ -9,6 +9,30 @@ FOR j from 0 to arr.length DO
 read(arr[i]);  
 read(arr1[j]);  
 IF(arr[i]==arr1[j]) THEN
+sum=arr[i]+arr1[j];
+ 
+write("la somme est:"); 
+read(sum);
+END FOR
+END FOR
+END IF
+
+END
+
+**********************
+ALGORITHM problem1 
+VAR i,j,sum,INTEGER
+arr:Array_of INTEGER[];
+arr1:Array_of INTEGER[];
+BEGIN
+sum=0;
+FOR i from 0 to arr.length DO
+FOR j from 0 to arr.length DO
+read(arr[i]);  
+read(arr1[j]);  
+IF(arr[i]<>arr1[j]) THEN
+write("impossible");
+ELSE
 sum=arr[i]+arr1[j];
  
 write("la somme est:"); 
