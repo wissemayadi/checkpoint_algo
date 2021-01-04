@@ -1,0 +1,38 @@
+PROCEDURE produit_scalaire(var v1:Array_OF INTEGER,v2:Array_OF INTEGER, n:INTEGER)
+VAR
+    i,n:INTEGER
+BEGIN
+    
+    FOR i FROM 0 TO n DO
+    read(v1[i])
+    read(v2[i])
+    END FOR
+    
+END
+FUNCTION somme_prod(var v1:Array_OF INTEGER,v2 : Array_OF INTEGER,n:integer):INTEGER
+VAR
+ ps,i:INTEGER
+
+BEGIN
+   ps:=0
+  FOR i from 0 to n DO 
+  ps=:v1[i]+v2[i]
+  END FOR
+  return somme_prod
+
+END
+
+
+ALGORITHM produit 
+VAR :
+ x,N:INTEGER
+ BEGIN
+ x=produit_scalaire(n,v1,v2)//appel proc saisie
+ N:=produit_scalaire(v1,v2)//appel fonction calcul 
+
+ if(N==0) THEN // test 
+  write("orthogonaux")
+  ELSE
+  write("non ortho")
+  END IF
+END
