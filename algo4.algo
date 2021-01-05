@@ -1,0 +1,19 @@
+ALGORITHM tri_selection 
+VAR t:Array_OF INTEGER
+   temp,j,i:INTEGER
+BEGIN
+ FOR i FROM 0 to tab.length-1 DO 
+ write (tab[i])
+FOR i from 1 to tab.length-1  DO 
+ j:=i 
+
+ while(j>0 AND t[j-1]>t[j]) DO
+  temp:=t[j]
+  t[j:=t[j-1]
+  t[j-1]:=temp
+  j:=j-1
+
+  END WHILE 
+  END FOR 
+  END
+ 
