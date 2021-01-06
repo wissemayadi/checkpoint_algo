@@ -9,7 +9,7 @@ FOR j from 0 to arr.length DO
 read(arr[i]);  
 read(arr1[j]);  
 IF(arr[i]==arr1[j]) THEN
-sum=arr[i]+arr1[j];
+sum=sum+arr[i]+arr1[j];
  
 write("la somme est:"); 
 read(sum);
@@ -33,7 +33,7 @@ read(arr1[j]);
 IF(arr[i]<>arr1[j]) THEN
 write("impossible");
 ELSE
-sum=arr[i]+arr1[j];
+sum=sum+arr[i]+arr1[j];
  
 write("la somme est:"); 
 read(sum);
